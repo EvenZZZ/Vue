@@ -6,8 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- 开发环境版本，包含了有帮助的命令行警告 -->
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-	
+	<!-- vue-app是根容器 -->
+	<div id="vue-app">
+		<h1>{{ name }}</h1>
+	</div>
+	<script src="app.js"></script>
 </body>
 </html>
