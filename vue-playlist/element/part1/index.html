@@ -15,8 +15,19 @@
 		<p>Name: {{ name }}</p>
 		<p>Job: {{ job }}</p>
 		<a v-bind:href="website">Web开发</a>
-		<input type="" v-bind:value="job">
+		<input v-bind:value="job">
 		<p v-html="websiteTag"></p>
+	</div>
+	<div id="app-2">
+		<span v-bind:title="message">
+			鼠标悬停几秒查看此处动态绑定的提示信息！
+		</span>
+		<p v-if="seen">看不见我看不见我</p>
+		<ol>
+			<li v-for="todo in todos">
+				{{ todo.text }}
+			</li>
+		</ol>
 	</div>
 	<script src="app.js"></script>
 </body>

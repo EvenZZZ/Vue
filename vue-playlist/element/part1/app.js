@@ -1,5 +1,5 @@
 //实例化Vue对象
-new Vue({
+var app = new Vue({
 	el:"#vue-app",
 	data:{
 		name:"Even",
@@ -14,6 +14,19 @@ new Vue({
 	}
 });
 
+var app2 = new Vue({
+	el:"#app-2",
+	data: {
+		message: "页面加载于 " + new Date().toLocaleString(),
+		seen: false,
+		todos: [
+			{ text: '吃' },
+			{ text: '喝' },
+			{ text: '玩' },
+			{ text: '乐' }
+		]
+	}
+});
 /*
  *el: element  需要获取的元素，一定是html中的根容器元素
  *data: 用于数据的存储

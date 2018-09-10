@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Vue.js</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1> 键盘 Events </h1>
+		<label>姓名:</label>
+		<input type="text" v-on:keyup.enter="logName">
+		<label>年龄:</label>
+		<input type="text" v-on:keyup.alt.enter="logAge">
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
