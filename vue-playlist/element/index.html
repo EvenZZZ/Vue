@@ -11,7 +11,12 @@
 <body>
 	<!-- vue-app是根容器 -->
 	<div id="vue-app">
-		<h1>{{ name }}</h1>
+		<h1>{{ greet('afternoon') }}</h1>
+		<p>Name: {{ name }}</p>
+		<p>Job: {{ job }}</p>
+		<a v-bind:href="website">Web开发</a>
+		<input type="" v-bind:value="job">
+		<p v-html="websiteTag"></p>
 	</div>
 	<script src="app.js"></script>
 </body>
