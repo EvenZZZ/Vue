@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Vue.js</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1> 动态 CSS Class </h1>
+		<h2>示例 1</h2>
+		<div v-on:click="changeColor = !changeColor" v-bind:class="{changeColor:changeColor}">
+			<span>SikoSiko</span>
+		</div>
+		<h2>示例 2</h2>
+		<button v-on:click="changeColor = !changeColor">change color</button>
+		<button v-on:click="changeLength = !changeLength">change length</button>
+		<div v-bind:class="compClasses">
+			<span>Even</span>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
