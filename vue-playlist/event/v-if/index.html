@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Vue.js</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1> v-if 条件 </h1>
+		<button v-on:click="error = !error">Toggol Error</button>
+		<button v-on:click="success = !success">Toggol Success</button>
+
+		<!-- <p v-if="error">网络连接错误： 404</p>
+		<p v-else-if="success">网络连接成功： 200</p> -->
+
+		<p v-show="error">网络连接错误： 404</p>
+		<p v-show="success">网络连接成功： 200</p>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
