@@ -12,12 +12,12 @@ Vue.use(VueRouter)  //使用路由
 
 //配置路由
 const routes = [
-	{path:'/',component:Home},
-	{path:'/menu',component:Menu},
-	{path:'/admin',component:Admin},
-	{path:'/about',component:About},
-	{path:'/login',component:Login},
-	{path:'/register',component:Register},
+	{path:'/',name:"homelink",component:Home},
+	{path:'/menu',name:"menulink",component:Menu},
+	{path:'/admin',name:"adminlink",component:Admin},
+	{path:'/about',name:"aboutlink",component:About},
+	{path:'/login',name:"loginlink",component:Login},
+	{path:'/register',name:"registerlink",component:Register},
 	{path:"*",redirect:'/'}
 ]
 
